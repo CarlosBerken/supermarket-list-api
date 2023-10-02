@@ -1,0 +1,19 @@
+{
+  "name": "supermarket-list-api",
+  "version": "1.0.0",
+  "description": "Aplicação node.js com express e mongodb para salvar lista de compras no supermercado",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
