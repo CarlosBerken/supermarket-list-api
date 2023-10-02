@@ -51,7 +51,7 @@ npm run start:dev
 
 ### Available endpoints
 
-[GET]/list-items
-[POST]/list-items
-[DELETE]/list-items/:id
-[UPDATE]/list-items/:id
+- [GET]/list-items
+- [POST]/list-items
+- [DELETE]/list-items/:id
+- [UPDATE]/list-items/:id
