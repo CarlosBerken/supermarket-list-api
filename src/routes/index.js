@@ -47,7 +47,9 @@ router.post("/list-item", async (req, res) => {
       username,
     });
     return res.json(newItem);
-  } catch (error) {}
+  } catch (error) {
+    return res.status(400).json({ error });
+  }
 });
 
 router.delete("/list-item/:id", async (req, res) => {
@@ -61,7 +63,9 @@ router.delete("/list-item/:id", async (req, res) => {
 
     const listItemDeleted = await ListItem.findByIdAndDelete(id);
     return res.json(listItemDeleted);
-  } catch (error) {}
+  } catch (error) {
+    return res.status(400).json({ error });
+  }
 });
 
 router.put("/list-item/:id", async (req, res) => {
